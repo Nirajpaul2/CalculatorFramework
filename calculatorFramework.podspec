@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
   spec.ios.deployment_target  = '12.0'
   spec.source       = { :git => "https://github.com/Nirajpaul2/CalculatorFramework.git", :tag => "#{spec.version}" }
-  spec.source_files  = "scframework/**/*.{h,m}"
+  spec.source_files  = "CalculatorFramework/**/*.{h,m}"
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
