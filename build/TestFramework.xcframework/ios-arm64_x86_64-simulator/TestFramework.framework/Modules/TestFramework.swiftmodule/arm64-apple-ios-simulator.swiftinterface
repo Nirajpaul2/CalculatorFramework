@@ -1,0 +1,19 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TestFramework
+import Foundation
+import Swift
+@_exported import TestFramework
+import _Concurrency
+@_hasMissingDesignatedInitializers public class MyCalcu {
+  public class func sum(num1: Swift.Int, num2: Swift.Int) -> Swift.Int
+  public static func multiplication(num1: Swift.Int, num2: Swift.Int) -> Swift.Int
+  public static func subtraction(num1: Swift.Int, num2: Swift.Int) -> Swift.Int
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class MyCalcu_SupportObjectiveC : ObjectiveC.NSObject {
+  @objc open class func sum(num1: Swift.Int, num2: Swift.Int) -> Swift.Int
+  @objc public static func multiplication(num1: Swift.Int, num2: Swift.Int) -> Swift.Int
+  @objc override dynamic public init()
+  @objc deinit
+}
